@@ -188,7 +188,7 @@ async def _(event):
     while AUTONAMESTART:
         DM = time.strftime("%d-%m-%y")
         HM = time.strftime("%H:%M")
-        name = f"⌚️ {HM}||›  {DEFAULTUSER} ‹||📅 {DM}"
+        name = f"🦄 ›  {DEFAULTUSER} ‹{HM}"
         logger.info(name)
         try:
             await event.client(functions.account.UpdateProfileRequest(first_name=name))
